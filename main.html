@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>login form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="banner">
+                <!-- <img src="./images/bg-heading-03.jpg" width="400" height="500" alt=""> -->
+            </div>
+            <div class="login">
+                <div class="login-head">
+                    <h1>Login Form</h1>
+                    <hr style="border-bottom:3px solid green;width: 20%; margin-left: 120px;">
+                    <br><br>
+                </div>
+                <h3 id="error"></h3>
+                <h3 id="sucess"></h3>
+                <br>
+
+                <div class="login-body">
+                    <div>
+                        <input type="email" id="email" placeholder="Enter Email">
+                        <br><br><br>    
+                        <input type="password" id="password" placeholder="*******"><br><br>
+                        <br>
+                        <button class="login-btn" onclick="login()">Login</button>
+                        <button class="sign-btn" onclick="signUp()">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/6cda728fa1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Righteous', cursive;
+
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff9ff3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 700px;
+    height: 500px;
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: 40% auto;
+    /* position: relative; */
+
+
+}
+.show{
+    display: block;
+}
+h3{
+    /* background-color: tomato; */
+    font-size: 15px;
+    /* border: 2px solid red; */
+    color: white;
+    display:none;
+    text-align: center;
+    /* padding-top: 20px; */
+
+    
+    /* margin: 10px; */
+    /* padding: 5px; */
+}
+h2,h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.banner{
+    /* background-color: blue; */
+    background-image: url("./images/bg-heading-03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.login{
+    background-color: black;
+    /* width: 90%; */
+    /* position: absolute; */
+    
+    /* display: flex; */
+
+}
+.login .login-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+input{
+    background: none;
+    text-align: center;
+    color: white;
+    outline:none;
+    border: none;
+    background-color: black;
+    border-bottom: 3px solid green;
+    font-size: 20px;
+    padding: 5px 20px;
+}
+input:focus{
+    /* border: none; */
+    /* background: none; */
+    outline: none;
+}
+button{
+    margin: 0 10px;
+}
+.login-btn{
+    padding:10px 30px;
+    border-radius:50px ;
+    border: none;
+    outline: none;
+    background-color: #10ac84;
+    color: white;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+    transition: 0.7s all;
+
+}
+.sign-btn{
+    padding:10px 25px;
+    border-radius:50px ;
+    border: none;
+    outline: none;
+    background-color: #10ac84;
+    color: white;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+    transition: 0.7s all;
+}
+.login-btn:hover{
+    background-color: #7bed9f;
+    transform: translateY(-4px);
+}
+.sign-btn:hover{
+    background-color: #7bed9f;
+    transform: translateY(-4px);
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .main{
+        display: flex;
+        position: relative;
+    }
+    .login{
+        position: absolute;
+        top: 145px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+        
+}
