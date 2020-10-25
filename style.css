@@ -5,15 +5,16 @@
 }
 body{
     font-family: 'Righteous', cursive;
+    background-color: #ff9ff3;
 
 }
 .wrapper{
     width: 100vw;
     height: 100vh;
-    background-color: #ff9ff3;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    margin-top: 50px;
 }
 .main{
     width: 700px;
@@ -24,6 +25,11 @@ body{
     /* position: relative; */
 
 
+}
+.borderLine{
+    border-bottom:3px solid green;
+    width: 20%;
+    margin-left: 120px;
 }
 .show{
     display: block;
@@ -50,10 +56,10 @@ h2,h1{
 
 .banner{
     /* background-color: blue; */
-    background-image: url("./images/bg-heading-03.jpg");
+    /* background-image: url("./images/bg-heading-03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
+    padding: 20px; */
 }
 .login{
     background-color: black;
@@ -121,17 +127,99 @@ button{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 676px){
     .main{
-        display: flex;
-        position: relative;
+      display: block;
+      width: 500px;
+      height: 500px;
     }
     .login{
-        position: absolute;
-        top: 145px;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        /* margin-top: 150px; */
+        /* width: 40%; */
+        height: 350px;
+    }
+    .banner{
+       /* background-image: url("./images/bg-heading-03.jpg");
+       background-repeat: no-repeat;
+       background-size: cover; */
+       width: 500px;
+       height: 200px;
+
+    }
+    .banner img{
+        width: 500px;
+        height: 200px;
+    }
+         
+}
+@media only screen and (max-width: 507px){
+    .main{
+      display: block;
+      width: 400px;
+      height: 500px;
+    }
+    .login{
+        /* margin-top: 150px; */
+        /* width: 40%;  */
+     height: 350px;
+    }
+    .banner{
+       /* background-image: url("./images/bg-heading-03.jpg");
+       background-repeat: no-repeat;
+       background-size: cover; */
+        width: 400px;
+       height: 200px; 
+
+    }
+    .banner img{
+        width: 400px;
+        height: 200px;
+    } 
+    .borderLine{
+        border-bottom: 3px solid green;
+        width: 20%;
+        margin-left: 115px;
     }
         
+}
+@media only screen and (max-width: 408px){
+    .main{
+      display: block;
+      width: 320px;
+      height: 500px;
+    }
+    .login{
+        /* margin-top: 150px; */
+        /* width: 40%;  */
+     height: 350px;
+    }
+    .banner{
+       /* background-image: url("./images/bg-heading-03.jpg");
+       background-repeat: no-repeat;
+       background-size: cover; */
+        width: 320px;
+       height: 200px; 
+
+    }
+    .banner img{
+        width: 320px;
+        height: 200px;
+    } 
+    #email{
+        width: 250px;
+        margin-left: 25px;
+    }
+    #password{
+        width: 250px;
+        margin-left: 25px;
+    }
+    .login-btn{
+        margin-left: 25px;
+    }
+    .borderLine{
+        border-bottom: 3px solid green;
+        width: 20%;
+        margin-left: 80px;
+    }
+    
 }
